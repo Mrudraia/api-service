@@ -38,7 +38,7 @@ func handleHealth(w http.ResponseWriter, r *http.Request) {
 
 func writeResponse(w http.ResponseWriter, responseString string) {
 	response := []byte(responseString)
-	fmt.Println(response)
+
 	_, err := w.Write(response)
 	if err != nil {
 		fmt.Println(err)
